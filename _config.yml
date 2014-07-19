@@ -21,7 +21,4 @@ version:          1.0.0
 github:
   repo:           https://github.com/jhosm/jhosm.github.io
 
-pages_list:
-  About: '/about'
-  Archive: '/archive'
-  Feed: '/atom.xml'
+pages_list:       {'About':'/about','Archive':'/archive','Feed':'/atom.xml'}
