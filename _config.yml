@@ -6,17 +6,22 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            João Miranda's blog
+tagline:          But I digress...
+url:              http://jhosm.github.io
 paginate:         1
 baseurl:          /
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           João Miranda
+  url:            https://twitter.com/jhosm
+  email:          joao.hugo.miranda @ gmail.com
 
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/jhosm/jhosm.github.io
+
+pages_list:
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
