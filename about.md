@@ -1,9 +1,7 @@
 ---
-
 layout: page
-
 title: About
-------------
+---
 
 [OutSystems](http://www.outsystems.com/) by day, [InfoQ editor](http://www.infoq.com/author/João-Miranda) by night.
 
