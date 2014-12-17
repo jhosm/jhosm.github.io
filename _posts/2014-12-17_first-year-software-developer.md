@@ -48,7 +48,7 @@ The best part? Half-way into that crunch, we felt things would go awry. And they
 
 Our reward? In my case, I almost lost my girlfriend (now my wife). The company's reward? It disappeared a year later.
 
-> ** Lessons Learned #4:** If you're going into crunch mode, be damn sure that it's worth it.
+> **Lessons Learned #4:** If you're going into crunch mode, be damn sure that it's worth it.
 
 > Most times, it's not. Ask why. Really ask why. Is the company going under if you don't do it? What is there to be lost? Be sure it's not just the vanity of someone (yours, maybe) or a macho/boys thing, for the camaraderie and all that. And, above all, make sure it's not a lost cause. If you think about it, you'll get your answer.
 
