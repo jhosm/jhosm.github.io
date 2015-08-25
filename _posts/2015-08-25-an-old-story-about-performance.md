@@ -1,50 +1,12 @@
 ---
 layout: post
-title: Mobile Web & Early Web - A Lot Of Similarities
+title: An Old Story About An Web Application's Performance
 comments: True
 ---
 
-Mobile is a revolution that is changing the entire world. It is also very interesting to realize how, in many (software engineering) ways, it's so similar to the early web. History does repeat itself, with some nuances. Oh... and a long (but hopefully entertaining) story to begin with.
+One old story about the web application that took 1 full minute to load and how it ended taking about 1 second.
 
 ---
-
-#### TL;DR;
-
-Early Web:
-
-* Browsers were at a rudimentary stage of evolution (in too many ways to count);
-* If you wanted performance, you built rich client applications - Javascript was sloowww;
-* If you wanted great UI, you built rich client applications;
-* If you wanted access to physical devices, you built rich client applications;
-* Network bandwidth was a scarce resource;
-* Latency could kill you;
-* Desktop hardware was much less powerful than nowadays;
-* Continuous Delivery was science fiction.
-* The desktop ecosystem was dominated by Microsoft;
-
-Mobile:
-
-* Mobile browsers are lacking;
-* If you want great UI, you're told to build native apps;
-* If you want access to sensors, you're told to build native apps;
-* Network bandwidth is a scarce resource;
-* Latency can kill you;
-* Some smartphone hardware can kill you;
-* Continuous Delivery is science fiction, if you build a native app.
-* The mobile ecosystem is dominated by Apple and Google;
-
-As with the early web, with mobile you:
-
-* Have to minimize the number of requests you do to the server;
-* Have to minimize the number of bytes you send and receive in each request;
-* Have to cache as much as you possibly can (and you can cache a lot);
-* Have to be really careful (and knowledgeable) in crafting Web UIs;
-
-As with the early web, I believe that the mobile status quo will also change with time. Fortunately, those early web lessons are there to be leveraged. Generally, we are always talking about distributed systems after all.
-
-For those of you who will tell me that mobile and early web are not the same: they are not. I'm just saying that they have many important similarities, from a software engineering perspective. And they are totally different beasts from a business perspective. Mobile is an extension of yourself. The desktop will never manage to be that.
-
-#### For those who love a good story
 
 A few (many?) years ago, I was part of a (small) team that was building a (small) web application. I was working at Banco BPI (a bank) at the time, and the application was to be used at the bank's branches. The application was not too complex: we were building a workflow to bring under control a process that involved a lot of paper going back and forth between the branches and a back-office department.
 
@@ -88,6 +50,11 @@ We instrumented the code and we found two main culprits:
 
 We built a StringBuilder, changed the way we... changed the DOM and... got the page loading in about 1 second! Success! Could we have made it even faster? Probably. But we had reached a point were it didn't really matter.
 
-Would I have gone to all this trouble today? It depends, but in the case of that application, probably not. Why? Because technology have moved on and matured. Even without most of those optimizations, the application would probably be fast enough nowadays. Browsers provide us with incredibly powerful development tools. Broadband (and wi-fi) internet is extremely fast. Javascript engines have improved by leaps and bounds. Web apps provide a nicer user experience than most desktop applications, in my opinion.
+Would I have gone to all this trouble today? It depends, but in the case of that application, probably not. Why? Because technology have moved on and matured. Even without most of those optimizations, the application would probably be fast enough nowadays. Browsers provide us with incredibly powerful development tools. Broadband (and wi-fi) internet is extremely fast. Javascript engines have improved by leaps and bounds. Web apps provide a nicer user experience than most desktop applications, in my opinion. I'm not alone in that belief. My current internet connection is lousy (a very uncommon scenario nowadays) and even Google's homepage is slow to load!
 
-Mobile web isn't there yet. But it will. The advantages are just to compelling (a theme for another post... someday... maybe).
+Why am I telling this story? Two options:
+
+1. As we get older, we like to tell stories about the old days and how we've seen it all before, that's why.
+2. This story has a lot of useful nuggets for the mobile web today, so I'm sharing my (immense) wisdom. I've never built a mobile web app (but I listened to a lot of experts on mobile web performance issues). [OutSystems](http://www.outsystems.com) has many of those.
+
+You choose the one you like most! Number 1? I thought so...
