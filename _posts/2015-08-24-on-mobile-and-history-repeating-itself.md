@@ -11,6 +11,7 @@ Mobile is a revolution that is changing the entire world. It is also very intere
 #### TL;DR;
 
 Early Web:
+
 * Browsers were at a rudimentary stage of evolution (in too many ways to count);
 * If you wanted performance, you built rich client applications - Javascript was sloowww;
 * If you wanted great UI, you built rich client applications;
@@ -22,6 +23,7 @@ Early Web:
 * The desktop ecosystem was dominated by Microsoft;
 
 Mobile:
+
 * Mobile browsers are lacking;
 * If you want great UI, you're told to build native apps;
 * If you want access to sensors, you're told to build native apps;
@@ -62,6 +64,7 @@ It turned out that we were sending a couple of megabytes, IIRC. By the way, [HTT
 So, a couple of megabytes. Oh, and we were sending that amount of data over many different HTTP requests. Remember that in those days, browsers would only do two requests simultaneously.
 
 So we started to optimize and remove waste. We started by drastically reducing the amount of data sent over the wire, and the number of requests:
+
 * We configured IIS to compress static (e.g.: images, javascript, html, css) files. We compressed dynamic files. The former forced us to trade CPU time (both in the server and the desktops) for request size.
 * We configured IIS to tell the browsers to aggressively cache all the static files for a lengthy period (one month, I believe).
 * We introduced some cache-busting techniques so that the browsers would retrieve updated files whenever needed.
@@ -78,6 +81,7 @@ We still weren't totally happy. It was a matter of pride to make it as fast and 
 I was in love with Javascript by then, so I thought: how hard can it be to build a code profiler in Javascript to profile Javascript? Not to hard, it turned out. About 200 lines of code, IIRC, including whitespace, a lot of curly braces and a bare-bones UI. We wouldn't get precise measurements, as the profiling code had a noticeable performance impact - the Heisenberg principle, I guess ;) - but it would be enough to spot the... hotspots (pun intended).
 
 We instrumented the code and we found two main culprits:
+
 * String concatenation (one of the usual suspects...)
 * Too many changes to the DOM
 
