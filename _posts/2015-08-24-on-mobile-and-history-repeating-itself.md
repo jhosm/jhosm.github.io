@@ -34,6 +34,7 @@ Mobile:
 * The mobile ecosystem is dominated by Apple and Google;
 
 As with the early web, with mobile you:
+
 * Have to minimize the number of requests you do to the server;
 * Have to minimize the number of bytes you send and receive in each request;
 * Have to cache as much as you possibly can (and you can cache a lot);
