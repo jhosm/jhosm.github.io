@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Scaling Software Development - II
+title: On Scaling Software Development - Autonomous Teams
 comments: True
 ---
 
